@@ -20,7 +20,8 @@ this blog is like other blogs , this mean its have a table for <span style="colo
 
    and then i want to create migration and insert fake data by factory 
 
-then make a resource route and resource Controller in Version 1 api and then make resource file for return data
+then make a resource route and resource Controller in Version 1 api and then make 
+resource file for return data
 
 
 
