@@ -9,21 +9,31 @@
       <li>RestFule api</li>
       <li>Graph Ql</li>
       <li>Test Driven Development</li>
-      <li>passport auth</li>
+      <li>sanctum authonticat</li>
 </ul>
 
-<pre>we are going to have a <span style="color:#d90966">blog</span> in this project.
+<pre>im going to have a <span style="color:#d90966">blog</span> in this project.
 
-this blog is like other blogs , this mean its have a table for <span style="color:#d90966">article</span> and a table for <span style="color:#d90966">category</span>
+this blog is like other blogs but simple , this mean its have a table for <span style="color:#d90966">article</span> and a table for <span style="color:#d90966">category</span>
 
    in first i want make a test for database (insert and relationship) 
 
    and then i want to create migration and insert fake data by factory 
 
-for make account and authonticate user i make 2 route and controller for login and register
+in api:
 
-then make a resource route and resource Controller in Version 1 api and then make 
-resource file for return data
+    for make account and authonticate user i make 2 route and controller for login and register
+
+    then make a resource route and resource Controller in Version 1 api and then make 
+    resource file for return data
+
+in GraphQl:
+
+   2 mutation for login and register
+   
+   2 query for get all article and single article
+
+   and make some type for return data 
 </pre>
 
 <p>Routes : </p>
@@ -70,5 +80,39 @@ resource file for return data
      <li>return : status=boolean </li> 
     </ul>
   </li>
+</ul>
+</pre>
+
+query GraphQl :
+<pre>
+<ul>
+  <li>articles
+   <ul>
+    <li>data you can choose : title , body , poster , categories </li>
+</ul>
+ </li>
+ <li>article
+   <ul>
+<li>params : id </li>
+<li>data you can choose : title , body , poster , categories </li>
+</ul>
+ </li>
+</ul>
+</pre>
+mutation GraphQl :
+<pre>
+<ul>
+  <li>register
+   <ul>
+<li>params : name , email , password </li>
+    <li>data you can choose : name , email </li>
+</ul>
+ </li>
+ <li>login
+   <ul>
+<li>params : email , password </li>
+<li>data you can choose : token </li>
+</ul>
+ </li>
 </ul>
 </pre>
